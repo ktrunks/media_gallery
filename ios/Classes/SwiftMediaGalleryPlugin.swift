@@ -347,7 +347,6 @@ public class SwiftMediaGalleryPlugin: NSObject, FlutterPlugin {
                                 exporter?.shouldOptimizeForNetworkUse = true
                         print("before exporting video path ---- ")
                                 exporter?.exportAsynchronously(completionHandler: {() ->
-                                    print("before exporting video path ---- ")
                                     Void in
                                     DispatchQueue.main.async(execute: {() -> Void in
                                         if exporter?.status == .completed {
